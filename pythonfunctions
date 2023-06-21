@@ -1,0 +1,149 @@
+# def sum(a,b):
+#     print(a+b)
+
+# sum(5,10)
+
+# # A simple Python function to check
+# # whether x is even or odd
+# def evenOdd(x):
+# 	if (x & 1):
+# 		print("odd")
+# 	else:
+# 		print("even")
+
+
+# # Driver code to call the function
+# evenOdd(2)
+# evenOdd(3)
+
+# # Python program to demonstrate
+# # default arguments
+# def myFun(x, y=50):
+# 	print("x: ", x)
+# 	print("y: ", y)
+
+
+# # Driver code (We call myFun() with only
+# # argument)
+# myFun(10)
+
+
+# # Python program to demonstrate Keyword Arguments
+# def student(firstname, lastname):
+# 	print(firstname, lastname)
+
+
+# # Keyword arguments
+# student(firstname='Geeks', lastname='Practice')
+# student(lastname='Practice', firstname='Geeks')
+
+# def nameAge(name, age):
+# 	print("Hi, I am", name)
+# 	print("My age is ", age)
+
+
+# # You will get correct output because
+# # argument is given in order
+# print("Case-1:")
+# nameAge("Suraj", 27)
+# # You will get incorrect output because
+# # argument is not in order
+# print("\nCase-2:")
+# nameAge(27, "Suraj")
+
+
+
+
+# # Python program to illustrate
+# # *args for variable number of arguments
+# def myFun(*argv):
+# 	for arg in argv:
+# 		print(arg)
+
+
+# myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks')
+
+# # Python program to
+# # demonstrate accessing of
+# # variables of nested functions
+
+# def f1():
+# 	s = 'I love GeeksforGeeks'
+	
+# 	def f2():
+# 		print(s)
+		
+# 	f2()
+
+# # Driver's code
+# f1()
+
+# # Here x is a new reference to same list lst
+# def myFun(x):
+# 	x[0] = 20
+
+
+# # Driver Code (Note that lst is modified
+# # after function call.
+# lst = [10, 11, 12, 13, 14, 15]
+# myFun(lst)
+# print(lst)
+
+# def myFun(x):
+
+# 	# After below line link of x with previous
+# 	# object gets broken. A new object is assigned
+# 	# to x.
+# 	x = [20, 30, 40]
+
+
+# # Driver Code (Note that lst is not modified
+# # after function call.
+# lst = [10, 11, 12, 13, 14, 15]
+# myFun(lst)
+# print(lst)
+
+# def swap(x, y):
+# 	temp = x
+# 	x = y
+# 	y = temp
+
+
+# # Driver code
+# x = 2
+# y = 3
+# swap(x, y)
+# print(x)
+# print(y)
+
+# calc = lambda num: "Even number" if num % 2 == 0 else "Odd number"
+
+# print(calc(20))
+
+# string = 'GeeksforGeeks'
+
+# # lambda returns a function object
+# print(lambda string: string)
+
+
+# filter_nums = lambda s: ''.join([ch for ch in s if not ch.isdigit()])
+# print("filter_nums():", filter_nums("Geeks101"))
+
+# do_exclaim = lambda s: s + '!'
+# print("do_exclaim():", do_exclaim("I am tired"))
+
+# find_sum = lambda n: sum([int(x) for x in str(n)])
+# print("find_sum():", find_sum(101))
+
+def cube(y):
+	print(f"Finding cube of number:{y}")
+	return y * y * y
+
+
+lambda_cube = lambda num: num ** 3
+
+# invoking simple function
+print("invoking function defined with def keyword:")
+print(cube(30))
+# invoking lambda function
+print("invoking lambda function:", lambda_cube(30))
