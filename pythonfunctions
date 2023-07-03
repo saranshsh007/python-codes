@@ -1,0 +1,17 @@
+# def sum(a,b):
+#     print(a+b)
+
+# sum(5,10)
+
+# A simple Python function to check
+# whether x is even or odd
+def evenOdd(x):
+	if (x & 1):
+		print("odd")
+	else:
+		print("even")
+
+
+# Driver code to call the function
+evenOdd(2)
+evenOdd(3)
